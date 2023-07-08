@@ -11,12 +11,12 @@ import java.sql.Timestamp
 class Constant {
 
     companion object {
-        const val BASE_URL = "https://gateway.marvel.com:443/v1/public/characters"
+        const val BASE_URL = "https://gateway.marvel.com:443/v1/public/characters/"
         val ts = Timestamp(System.currentTimeMillis()).time.toString()
-        const val API_KEY = "12826ed96e16fb06ba5a0d7cfb710e3a"
-        const val PRIVATE_KEY = "f88133fa86e3d4ab83967622c275755dc4f34553"
+        //modificare con le proprie chiavi
+        const val API_KEY = "c9673a07f874b3a275665a6bf64b54cb"
+        const val PRIVATE_KEY = "144e5c34cd52eb61e9cc8d3ec94dbcf7d7087653"
         const val limit = "100"
-
 
         fun hash(): String {
             val input = "$ts$PRIVATE_KEY$API_KEY"

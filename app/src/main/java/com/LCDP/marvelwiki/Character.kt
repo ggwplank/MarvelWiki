@@ -1,7 +1,10 @@
 package com.LCDP.marvelwiki
 
+data class CharaterResponse(var data: CharaterData)
+data class CharaterData (val results: List<Character>)
+
 data class Character (
-    var id: Int,
-    var name: String,
-    var description: String
+    val id: Int,
+    val name: String,
+    val description: String
 )
